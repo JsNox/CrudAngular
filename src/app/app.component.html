@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand navbar-light header">
+    <div class="nav navbar-nav">
+        <a class="nav-item nav-link active" href="#">Almacen<span class="visually-hidden">(current)</span></a>
+        <a class="nav-item nav-link" [routerLink]="['/list']" routerLinkActive="router-link-active">Lista de inventario</a>
+        <a class="nav-item nav-link" [routerLink]="['/add']" routerLinkActive="router-link-active">Agregar producto</a>
+
+    </div>
+</nav>
+<div class="container pt-5">
+    <router-outlet></router-outlet>
+</div>
+
+<footer class="dsc-footer">
+    <div>
+        <p>Creado y diseñado por J.Silos | Todos los derechos reservados</p>
+    </div>
+</footer>

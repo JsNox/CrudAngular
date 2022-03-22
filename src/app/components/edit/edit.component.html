@@ -1,0 +1,38 @@
+<div class="card">
+    <div class="card-header">
+        Editar Producto
+    </div>
+    <div class="card-body">
+        <form ngNativeValidate [formGroup]="formGroup" (ngSubmit)="enviarDatos()">
+            <div class="mb-3">
+                <label for="" class="form-label">Descripcion</label>
+                <input required type="text" class="form-control" name="" formControlName="descripcion" id="" aria-describedby="helpId" placeholder="Escribe la descripción del producto">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Cantidad</label>
+                <input required type="text" class="form-control" name="" formControlName="cantidad" id="" aria-describedby="helpId" placeholder="Escribe la cantidad">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Unidad</label>
+                <select required class="form-select" formControlName="unidad" aria-label="Default select example">
+                    <option selected>Selecciona una opción</option>
+                    <option value="Kg">Kg</option>
+                    <option value="Lt">Lt</option>
+                    <option value="Pieza">Pieza</option>
+                    <option value="Caja">Caja</option>
+                    <option value="Paquete">Paquete</option>
+                  </select>
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Clave</label>
+                <input required type="text" class="form-control" name="" formControlName="clave" id="" aria-describedby="helpId" placeholder="Ingresa la clave del producto">
+            </div>
+            <div class="btn-group" role="group" aria-label="">
+                <button type="submit" class="btn btn-primary">Aceptar</button>
+                <button type="button" [routerLink]="['/list']" routerLinkActive="router-link-active" class="btn btn-danger">Cancelar</button>
+            </div>
+
+        </form>
+    </div>
+
+</div>
